@@ -73,35 +73,35 @@ def wish_me():
     speak(" I am Jarvis, tell me sir how can i help you")
 
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
     
 
-    wish_me()
+#     wish_me()
     
-    while True:
-        query=takeCommand().lower()
+#     while True:
+#         query=takeCommand().lower()
 
-        if "wikiepedia" in query:
-            speak("Searching wikipedia")
-            results= query.replace("wikipedia","")
-            wikipedia.summary(results, sentences=2)
-            speak("According to wikipedia")
-            print(results)
-            speak(results)
+#         if "wikipedia" in query:
+#             speak("Searching wikipedia")
+#             results= query.replace("wikipedia","")
+#             wikipedia.summary(results, sentences=2)
+#             speak("According to wikipedia")
+#             print(results)
+#             speak(results)
         
-        elif "youtube" in query:
-            speak("Opening youtube")
-            webbrowser.open("youtube.com")
+#         elif "youtube" in query:
+#             speak("Opening youtube")
+#             webbrowser.open("youtube.com")
 
-        elif "github" in query:
-            speak("Opening github")
-            webbrowser.open("github.com")
+#         elif "github" in query:
+#             speak("Opening github")
+#             webbrowser.open("github.com")
 
-        elif 'time' in query:
-            strTime = datetime.datetime.now().strftime("%H:%M:%S")
-            speak(f"Sir the time is {strTime}")
+#         elif 'time' in query:
+#             strTime = datetime.datetime.now().strftime("%H:%M:%S")
+#             speak(f"Sir the time is {strTime}")
 
 
-        elif "goodbye" in query:
-            speak("Ok sir. I am always here for you. bye bye")
-            exit()
+#         elif "goodbye" in query:
+#             speak("Ok sir. I am always here for you. bye bye")
+#             exit()
