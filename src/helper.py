@@ -1,0 +1,2 @@
+def information():
+    print("Hello")
