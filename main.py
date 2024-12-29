@@ -37,7 +37,7 @@ mic = sr.Microphone()
 
 #speech recognition function
 def takeCommand():
-    """This function will recognize voice and return textx
+    """This function will recognize voice and return text
 
     """
 
@@ -59,5 +59,25 @@ def takeCommand():
         return "None"
     return query
 
-text=takeCommand()
-speak(text)
+print("Before welcome")
+
+
+if __name__ == "__main__":
+    query=takeCommand().lower()
+    print(query)
+
+    if "wikiepedia" in query:
+        speak("Searching wikipedia")
+        results= query.replace("wikipedia","")
+        wikipedia.summary(results, sentences=2)
+        speak("According to wikipedia")
+        print(results)
+        speak(results)
+    
+    elif "youtube" in query:
+        speak("Opening youtube")
+        webbrowser.open("youtube.com")
+
+    elif "github" in query:
+        speak("Opening github")
+        webbrowser.open("github.com")
