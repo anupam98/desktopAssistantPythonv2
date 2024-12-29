@@ -21,3 +21,8 @@ conda activate assistant
 ```bash
 conda pip install -r requirements.txt
 ```
+```bash
+streamlist run app.py
+```
+
+AIzaSyAThfIZ_swfZhObXP_OeFpAnez08o2d_sE
